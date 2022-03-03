@@ -12,17 +12,14 @@ body {
 .container {
     width: 60%;
     margin: 0 auto;
-    border: 1px solid orange;
 }
 
 div.row {
     width: 100%;
-    border: 1px solid blue;
     margin-bottom: 1.5em;
 }
 
 .item {
-    border: 1px solid green;
     display: inline-block;
     width: calc(100%/3 - 4px);
     vertical-align: top;
@@ -40,6 +37,15 @@ div > img {
     right: 0;
     background-color: #ffffff;
     padding: .1em .4em;
+}
+
+.hover-heart {
+    color: red; 
+    display: none;
+}
+
+.item:hover .hover-heart {
+    display: block;
 }
 
 .bg-settings {
@@ -81,4 +87,14 @@ div > img {
 .full-price {
     font-size: .8em;
     text-decoration: line-through;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.item:hover .hover-img{
+    display: block;
 }
